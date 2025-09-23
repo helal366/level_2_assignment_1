@@ -1,5 +1,5 @@
 {
-    // Solution of Problem 2:
+    // 
     type Item={
         title:string;
         rating: number

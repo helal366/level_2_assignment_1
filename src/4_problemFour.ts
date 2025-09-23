@@ -1,5 +1,5 @@
 {
-    // Solution of Problem Four
+    // 
     class Vehicle{
         private make:string;
         private year: number;

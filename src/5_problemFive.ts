@@ -1,5 +1,5 @@
 {
-    // Solution of Problem five
+    // 
     const processValue=(value: string|number):number=>{
         if(typeof value==='string'){
             return value.length;
