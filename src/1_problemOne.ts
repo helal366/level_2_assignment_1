@@ -1,5 +1,5 @@
 {
-    // 
+    // Solution of Problem 1:
     const formatString = (param1:string, param2?: boolean):string=>{
         if(param2===true){
             return param1.toUpperCase()
