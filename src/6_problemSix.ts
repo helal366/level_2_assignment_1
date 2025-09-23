@@ -13,13 +13,19 @@
         {name: 'Pencil', price: 30},
         {name: 'Cutter', price: 25}
     ]
-    const getMostExpensiveProduct=(products:Product[])=>{
-        let maxPrice=0;
-        for(let product of products){
-            if(product['price']>=maxPrice) maxPrice=product['price']
+    const getMostExpensiveProduct=(products:Product[]):Product|null=>{
+        if(products.length===0){
+            return null;
         }
-        const result=products.filter((p)=>p.price===maxPrice);
-        return result
+        
+        let maxPrice:Product={name:'',price: 0};
+        for(let product of products){
+            if(product.price>=maxPrice.price) {
+                maxPrice=product
+            }
+        }
+        return maxPrice
+        
     }
     console.log(getMostExpensiveProduct(products))
     // 
