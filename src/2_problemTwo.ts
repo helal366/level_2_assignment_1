@@ -14,9 +14,9 @@
     ];
     
     // using for of
-    const filterByRating=(itemList:Item[]):Item[]=>{
+    const filterByRating=(items:Item[]):Item[]=>{
         const itemListWithMinRating=[];
-        for(let i of itemList){
+        for(let i of items){
             if(i.rating>=4){
                 itemListWithMinRating.push(i);
             }
@@ -26,8 +26,8 @@
     console.log(filterByRating(books))
 
     // using filter() function
-    const ratingFilter=(itemList:Item[])=>{
-        const result=itemList.filter((item)=>item.rating>=4.0);
+    const ratingFilter=(items:Item[])=>{
+        const result=items.filter((item)=>item.rating>=4.0);
         return result
     }
     console.log(ratingFilter(books))
